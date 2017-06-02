@@ -40,7 +40,7 @@ public class ReversedList<T> implements Iterable<T>{
 
         this.items = copy;
 
-        capacity -= 2;
+        this.capacity -= 2;
 
     }
 
@@ -82,7 +82,7 @@ public class ReversedList<T> implements Iterable<T>{
 
         @Override
         public T next() {
-            return items[this.index--];
+            return this.items[index--];
         }
     }
 
